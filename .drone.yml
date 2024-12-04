@@ -6,11 +6,12 @@ platform:
   arch: arm64
 
 steps:
-- name: hello
-  image: busybox
+- name: build
+  image: golang:latest
   commands:
-  - echo hello world
- 
-trigger:
-  branch:
-  - main
+  - go build
+  
+- name: test
+  image: golang:latest
+  commands:
+  - go test
