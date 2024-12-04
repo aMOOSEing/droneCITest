@@ -1,10 +1,9 @@
----
 kind: pipeline
 type: docker
-name: default
+name: backend
 
 steps:
-- name: backend
+- name: build
   image: golang
   commands:
   - go build
