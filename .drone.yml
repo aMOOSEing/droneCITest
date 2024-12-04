@@ -1,10 +1,18 @@
+---
 kind: pipeline
 type: docker
-name: go
+name: default
+
+platform:
+  os: darwin
+  arch: arm64
 
 steps:
-
-- name: greetings
-  image: golang:latest
+- name: hello
+  image: busybox
   commands:
-  - go build -o ./myapp
+  - echo hello world
+ 
+trigger:
+  branch:
+  - main
