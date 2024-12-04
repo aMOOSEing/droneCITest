@@ -2,11 +2,11 @@ kind: pipeline
 name: run_tests
 
 steps:
-  name: build
+  - name: build
     image: golang:1.23
     commands:
       - echo "Building..."
-  name: test
+  - name: test
     image: golang:1.23
     commands:
       - echo "Testing..."
