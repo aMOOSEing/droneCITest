@@ -1,3 +1,4 @@
+kind: pipeline
 steps:
 - name: run-tests
   # Tests must run in GLibc based container because `race` does not
@@ -7,3 +8,4 @@ steps:
   commands:
   - go build
   - go test
+---
