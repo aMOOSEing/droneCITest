@@ -1,9 +1,11 @@
 pipeline:
   build:
-    image: golang:1.18
+    image: golang:1.23
     commands:
       - go build -v
+    timeout: 5m  # Timeout for the build step
   test:
-    image: golang:1.18
+    image: golang:1.23
     commands:
       - go test -v
+    timeout: 5m  # Timeout for the test step
