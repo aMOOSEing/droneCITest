@@ -3,7 +3,6 @@ type: docker
 name: defaultz
 
 platform:
-  os: darwin
   arch: arm64
 
 steps:
