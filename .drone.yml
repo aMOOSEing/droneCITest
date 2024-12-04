@@ -1,6 +1,6 @@
 kind: pipeline
 type: docker
-name: defaultz
+name: default
 
 platform:
   arch: arm64
