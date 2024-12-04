@@ -1,0 +1,9 @@
+pipeline:
+  build:
+    image: golang:1.18
+    commands:
+      - go build -v
+  test:
+    image: golang:1.18
+    commands:
+      - go test -v
