@@ -8,5 +8,5 @@ func Greeting(name string) string {
 
 func main() {
 	input := Greeting("Mus")
-	fmt.Println(input)
+	fmt.Println(input)//test
 }
