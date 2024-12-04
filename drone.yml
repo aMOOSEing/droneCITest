@@ -1,9 +1,12 @@
-pipeline:
-  build:
-    image: golang:1.18
+kind: pipeline
+name: run_tests
+
+steps:
+  name: build
+    image: golang:1.23
     commands:
       - echo "Building..."
-  test:
-    image: golang:1.18
+  name: test
+    image: golang:1.23
     commands:
       - echo "Testing..."
